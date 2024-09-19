@@ -1,5 +1,5 @@
 import React from "react";
-import Printer3dCanvas from "./canvas/printer3D";
+import Printer3dCanvas from "./canvas/Printer3D";
 import "../styles/FirstSection.css";
 
 const FirstSection = () => {
