@@ -9,8 +9,15 @@ import TalkButton from "./TalkButton";
 const TopBar = () => {
     const [active, setActive] = useState("");
 
+    const scrollToSection = () => {
+        const targetSection = document.getElementById('loader-container'); //todo: cambiar por el id de la sección
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
-        <div className="main-container flex flex-row w-full bg-nav-pattern h-[500px] bg-center bg-no-repeat bg-cover">
+        <div className="main-container flex flex-row w-full bg-nav-pattern h-[520px] bg-center bg-no-repeat bg-cover">
             <nav className={`${styles.paddingX} w-full py-1 top-0 z-20  flex-col`}>
                 <div className="l-container">
                     <div className={`flex w-full items-center justify-between max-w-7xl ml-3`}>
@@ -46,6 +53,13 @@ const TopBar = () => {
                                 </li>
                             ))}
                         </ul>
+                    </div>
+                    <div className={`flex w-full justify-between max-w-7xl mt-2 h-[40px]`}>
+                        <div className={`w-28 h-28  bg-white rounded-full ml-[50%] cursor-pointer`} onClick={scrollToSection}>
+                            <div className={`w-28 h-20 text-center`} >
+                                <span className={`arrow text-2xl font-bold`}>↓</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav >
