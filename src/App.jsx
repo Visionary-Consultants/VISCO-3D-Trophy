@@ -19,6 +19,7 @@ function App() {
           <TopBar />
           <Suspense fallback={<Loader />}>
             <ContactForm />
+            <Loader />
           </Suspense>
         </div>
       </Router>
