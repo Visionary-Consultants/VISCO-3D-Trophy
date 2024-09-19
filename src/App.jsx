@@ -4,7 +4,7 @@ import Loader from './components/Loader'
 import TopBar from './components/TopBar'
 import './App.css'
 import './index.css'
-import { Canvas } from '@react-three/fiber'
+import FirstSection from './components/FirstSection'
 
 // Carga diferida de componentes
 const ContactForm = lazy(() => import('./components/ContactForm'));
@@ -16,13 +16,14 @@ function App() {
     <>
       <Router>
         <div className='app'>
-          <TopBar />
+          < TopBar />
           <Suspense fallback={<Loader />}>
+            <FirstSection />
             <ContactForm />
             <Loader />
           </Suspense>
         </div>
-      </Router>
+      </Router >
     </>
   )
 }
