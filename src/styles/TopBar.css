@@ -7,3 +7,11 @@
     gap: 0px;
     opacity: 0px;
 }
+
+.r-container {
+    display: flex;
+    margin-top: 250px;
+    justify-content: end;
+    gap: 0px;
+    opacity: 0px;
+}
