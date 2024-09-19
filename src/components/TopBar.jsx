@@ -22,10 +22,13 @@ const TopBar = () => {
                             <a href={`#${link.id}`} className={`nav-link`}>{link.title}</a>
                         </li>
                     ))}
+                    <li className={`text-white text-[18px] font-medium h-9 content-center cursor-pointer`}>
+                        <CustomButton text="Presupuesto" color1="bg-[#181B3C]" isGradient={false} color_button="bg-white" color_text="text-black" />
+                    </li>
                 </ul>
             </div>
             <div className={`flex  flex-row w-full items-center justify-between max-w-7xl ml-3`}>
-                <CustomButton text="Cuéntanos tu idea" />
+                <CustomButton text="Cuéntanos tu idea" color1="bg-white" color2="bg-[#BDCBFD]" isGradient color_text="text-white" />
                 <ul className={`list-none hidden sm:flex flex-row gap-10`}>
                     {navLinks2.map((link) => (
                         <li key={link.id} className={`${active == link.title ? "text-white" : "text-gray-300"}

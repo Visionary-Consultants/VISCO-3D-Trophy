@@ -7,10 +7,6 @@ export const navLinks = [
         id: "opciones",
         title: "Opciones",
     },
-    {
-        id: "presupuesto",
-        title: "Presupuesto",
-    },
 ];
 
 export const navLinks2 = [
