@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from '../styles';
 import { navLinks, navLinks2 } from "../constants";
 import '../styles/TopBar.css';
-import TopBarLogo from '../assets/TopBar/TopBarLogo.svg';
+import TopBarLogo from '../assets/TopBar/topBarLogo.svg';
 import CustomButton from "./CustomButton";
 
 const TopBar = () => {

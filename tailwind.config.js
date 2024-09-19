@@ -11,7 +11,7 @@ export default {
         xs: "450px",
       },
       backgroundImage: {
-        "nav-pattern": "url('./src/assets/TopBar/backgroundTopBar.svg')",
+        "nav-pattern": "url('/src/assets/TopBar/backgroundTopBar.svg')",
       },
     },
   },
