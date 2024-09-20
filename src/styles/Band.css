@@ -1,14 +1,18 @@
 .rotated-div {
-    transform: rotate(3.5deg);
+    transform: rotate(3.5deg) translateY(50%);
+    overflow: hidden;
 }
 
 .rotated-div-mirror {
-    transform: rotate(-182.5deg) translateY(-60%);
+    transform: rotate(-182.5deg) translateY(-124%) translateX(2%);
     opacity: 0.5;
+    overflow: hidden;
 }
 
 .rotated-div-mirror .scrolling-text {
-    animation: scroll 30s linear infinite;
+    opacity: 0;
+    animation: scroll_mirror 20s linear infinite;
+    transition: opacity 0.5s ease-in;
 }
 
 .scrolling-text {
@@ -20,9 +24,24 @@
     padding-right: 150px;
 }
 
+.rotated-div-mirror .scrolling-text {
+    animation-delay: 8s;
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes scroll_mirror {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0.5;
     }
 
     100% {
