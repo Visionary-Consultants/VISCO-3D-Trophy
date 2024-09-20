@@ -38,7 +38,7 @@ const TopBar = () => {
                     </div>
                     <div className={`flex w-full items-center justify-between max-w-7xl ml-3`}>
                         <div className={`flex flex-col gap-3`}>
-                            <h1 className={`text-white text-[80px] font-sans flex-auto leading-[80px]`}>Lorem ipsum dolor sit amet</h1>
+                            <h1 className={`text-white text-[80px] font-sans flex-auto leading-[80px] break-normal`}>Lorem ipsum dolor sit amet</h1>
                             <h1 className={`text-white text-[20px] font-sans flex-auto w-[311.62px] font-normal p-6`}>Lorem ipsum dolor sit amet, consectetur.</h1>
                         </div>
                         <h1 className={`text-white text-[80px] font-sans flex-none w-1/3 leading-[80px] text-right`}> sit amet, consectetur.</h1>

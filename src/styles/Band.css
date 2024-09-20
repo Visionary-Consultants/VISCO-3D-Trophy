@@ -1,0 +1,31 @@
+.rotated-div {
+    transform: rotate(3.5deg);
+}
+
+.rotated-div-mirror {
+    transform: rotate(-182.5deg) translateY(-60%);
+    opacity: 0.5;
+}
+
+.rotated-div-mirror .scrolling-text {
+    animation: scroll 30s linear infinite;
+}
+
+.scrolling-text {
+    animation: scroll 20s linear infinite;
+    word-spacing: 20px;
+}
+
+.scrolling-text span {
+    padding-right: 150px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}

@@ -2,6 +2,7 @@ import { useState, lazy, Suspense } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Loader from './components/Loader'
 import TopBar from './components/TopBar'
+import Band from './components/Band'
 import './App.css'
 import './index.css'
 import FirstSection from './components/FirstSection'
@@ -19,6 +20,7 @@ function App() {
           < TopBar />
           <Suspense fallback={<Loader />}>
             <FirstSection />
+            <Band />
             <ContactForm />
             <Loader />
           </Suspense>
