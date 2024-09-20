@@ -8,11 +8,6 @@ import { MathUtils } from 'three'
 const Stars = (props) => {
     const ref = useRef();
     const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
-    const positions = Array.from({ length: 10 }, (i) => [
-        MathUtils.randFloatSpread(8),
-        MathUtils.randFloatSpread(8),
-        MathUtils.randFloatSpread(8),
-    ])
 
     useFrame((state, delta) => {
         ref.current.rotation.x -= delta / 10;
@@ -32,19 +27,6 @@ const Stars = (props) => {
             </Points>
         </group>
     );
-};
-
-function PointEvent({ index, ...props }) {
-    const [hovered, setHover] = useState(false)
-    const [clicked, setClick] = useState(false)
-    return (
-        <Point
-            {...props}
-            color={clicked ? 'lightblue' : hovered ? 'hotpink' : 'orange'}
-            onPointerOver={(e) => (e.stopPropagation(), setHover(true))}
-            onPointerOut={(e) => setHover(false)}
-            onClick={(e) => (e.stopPropagation(), setClick((state) => !state))}></Point>
-    )
 };
 
 const StarsCanvas = () => {
