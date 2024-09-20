@@ -54,7 +54,7 @@ const TopBar = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className={`flex w-full justify-between max-w-7xl mt-2 h-[40px]`}>
+                    <div className={`flex w-full justify-between max-w-7xl mt-2 h-[40px] overflow-hidden`}>
                         <div className={`w-28 h-28  bg-white rounded-full ml-[50%] cursor-pointer`} onClick={scrollToSection}>
                             <div className={`w-28 h-20 text-center`} >
                                 <span className={`arrow text-2xl font-bold`}>↓</span>

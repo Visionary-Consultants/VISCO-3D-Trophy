@@ -6,6 +6,7 @@ import Band from './components/Band'
 import './App.css'
 import './index.css'
 import FirstSection from './components/FirstSection'
+import StarsCanvas from './components/canvas/Stars'
 
 // Carga diferida de componentes
 const ContactForm = lazy(() => import('./components/ContactForm'));
@@ -16,13 +17,14 @@ function App() {
   return (
     <>
       <Router>
-        <div className='app'>
+        <div className='app relative z-0 bg-slate-500'>
           < TopBar />
           <Suspense fallback={<Loader />}>
             <FirstSection />
             <Band />
             <ContactForm />
             <Loader />
+            <StarsCanvas />
           </Suspense>
         </div>
       </Router >
