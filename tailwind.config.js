@@ -12,6 +12,7 @@ export default {
       },
       backgroundImage: {
         "nav-pattern": "url('/src/assets/TopBar/backgroundTopBar.svg')",
+        "contact-pattern": "url('/src/assets/ContactForm/contactBG.svg')",
       },
     },
   },
