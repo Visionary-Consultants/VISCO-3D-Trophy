@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className='app relative z-0 bg-slate-500'>
+        <div className='app relative z-0 bg-white'>
           < TopBar />
           <Suspense fallback={<Loader />}>
             <FirstSection />
@@ -32,7 +32,7 @@ function App() {
               <CardItem title={"Placas"} image={CardImg} type={"card-4"} />
             </div>
             <ContactForm />
-            <StarsCanvas />
+            {/* <StarsCanvas /> */}
           </Suspense>
           <Footer />
         </div>

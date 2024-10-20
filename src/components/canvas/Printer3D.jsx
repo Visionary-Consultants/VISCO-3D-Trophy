@@ -18,7 +18,7 @@ const Printer3D = (props) => {
                 shadow-mapSize={1024}
             />
             <pointLight intensity={1} />
-            <primitive object={printer.scene} scale={0.05} position={[0, -2, 0]} rotation={[0, Math.PI / 0.55, 0]} />
+            <primitive object={printer.scene} scale={0.06} position={[0, -2, 0]} rotation={[0, Math.PI / 0.55, 0]} />
         </mesh>
     );
 };
