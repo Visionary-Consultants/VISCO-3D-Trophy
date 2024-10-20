@@ -7,6 +7,9 @@ import './App.css'
 import './index.css'
 import FirstSection from './components/FirstSection'
 import StarsCanvas from './components/canvas/Stars'
+import Footer from './components/Footer'
+import CardItem from './components/CardItem'
+import CardImg from './assets/Cards/template-item.png'
 
 // Carga diferida de componentes
 const ContactForm = lazy(() => import('./components/ContactForm'));
@@ -22,10 +25,16 @@ function App() {
           <Suspense fallback={<Loader />}>
             <FirstSection />
             <Band />
+            <div className='card-section flex items-center justify-between mx-10'>
+              <CardItem title={"Medallas"} image={CardImg} type={"card-1"} />
+              <CardItem title={"Trofeos"} image={CardImg} type={"card-2"} />
+              <CardItem title={"Detalles"} image={CardImg} type={"card-3"} />
+              <CardItem title={"Placas"} image={CardImg} type={"card-4"} />
+            </div>
             <ContactForm />
-            <Loader />
             <StarsCanvas />
           </Suspense>
+          <Footer />
         </div>
       </Router >
     </>

@@ -4,7 +4,7 @@
 }
 
 .rotated-div-mirror {
-    transform: rotate(-182.5deg) translateY(-124%) translateX(2%);
+    transform: rotate(-182.5deg) translateY(-130%) translateX(1%);
     opacity: 0.5;
     overflow: hidden;
 }
